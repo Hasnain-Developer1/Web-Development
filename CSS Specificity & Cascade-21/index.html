@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specificity of this selector is 1 */
+        h1 {
+            color: aqua;
+        }
+
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* The specificity of this selector is 10 */
+        .cpurple {
+            color: blue
+                /*!important*/
+            ;
+            /*agr important likh dya to sb sa zeyada priority is ko de jy ge*/
+        }
+
+        /* The specificity of this selector is 10 */
+
+        [data-q=a] {
+            color: maroon;
+        }
+
+        .cred {
+            color: red;
+        }
+
+        /* This is an example of qattrubute selector and it's specificity is 10 */
+        a.harryclass.rohan-class[href]:hover /*1 + 10 + 10 + 10 + 10 = 41*/ {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple " data-q="a">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>
