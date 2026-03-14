@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        /* div{
+            background-color: red;
+        } */
+         .red{
+            background-color: red;
+         }
+         #green{
+            background-color: green;
+         }
+         div > p{ /*div > p means div ma child p ha*/
+            color: blue;
+            background-color: brown;
+         }
+         div  p{ /*div p mean div ma khe bhe p ha chaheya wo div k andr article k andr p ho ya khe bhe ho */
+            color: blue;
+            background-color: brown;
+         }
+         *{ /* is a universal selector */
+            margin: 0;
+            padding: 0;
+         }
+         a:visited{ /*pseudo Selector*/
+            color: yellow;
+         }
+         a:link{
+            color: green;
+         }
+         a:active{ /*jb click kra to.....*/
+            background-color: red;
+         }
+         a:hover{
+            background-color: yellow;
+         }
+         p:first-child{ /* it means agr khe bhe div ya main ya kisse ma bhe first class p ho to us pr ya CSS apply kr do*/
+            background-color: aqua;
+         }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am one</p>
+        <p>I am second</p>
+    </main>
+    <div class="red" >
+        I am Div
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, laboriosam.</p>
+        </article>
+        
+    </div>
+    <div id="green">
+        I am another div
+    </div>
+    <div>
+        <a target="_blank" href="https://google.com">Go to Google</a>
+        <a target="_blank" href="https://fiverr2.com">Go to Fiverr</a>
+    </div>
+</body>
+</html>
