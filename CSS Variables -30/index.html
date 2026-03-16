@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{ /*Gobal veriable aik is jagga pr change krna sa pori website ma change a jy ga*/
+            --color: rgb(124, 234, 122);
+            --seccolor: rgb(231, 164, 246);
+            --defpad: 23px;
+            --defop: 0.2;
+        } 
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+        ul li:first-child{
+            --color: rgb(241, 112, 19); /*Ya over awrite ho gya ab is class ma jaha khe bhe ya var use kra ga tu ya new color ay ga*/
+            background-color: var(--color,blue); /* agr variable not found ay ga to ya color lag jy ga */
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis blanditiis quae alias autem doloremque? Eveniet harum beatae, eligendi numquam praesentium porro saepe nobis! Nesciunt earum eos cupiditate fugit nulla nostrum, adipisci numquam sint deleniti, aliquid hic! Vero, doloribus veniam et sunt iusto cumque qui totam.
+    </div>
+</body>
+</html>
