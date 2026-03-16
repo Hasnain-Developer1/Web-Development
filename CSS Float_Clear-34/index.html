@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        img{
+            float: left;
+            /* float: right; */
+            
+        }
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            /* clear: right; */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="My Pic.jpg" alt="" width="230">
+        <div class="card">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa non deleniti natus dolorum saepe ullam facilis ipsam nisi placeat dicta, corrupti recusandae totam ea quos nemo mollitia doloribus, sapiente iste commodi optio adipisci nostrum quis!</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione dolorum cumque facilis tempora similique explicabo neque delectus voluptas laboriosam tempore provident voluptatum eveniet voluptates consequatur at ea voluptatem omnis animi, repudiandae, error adipisci. Repellendus officia vitae sed at, quod qui quasi quam ratione id ad velit sunt magni, pariatur quibusdam suscipit praesentium quia eum minus doloremque. Nisi perspiciatis dolores culpa ipsam! Vero, culpa. Alias incidunt iure accusantium possimus ipsa, sapiente deserunt numquam asperiores impedit maiores ratione perferendis corporis aperiam quos voluptate, sint eveniet iste? Facere quod culpa fuga maiores temporibus nulla rerum atque rem ex pariatur sint consequuntur expedita quia in dolorem natus modi ipsum iste nobis esse unde impedit, adipisci repellat? Corporis vitae asperiores, est officiis nam provident ipsum optio maxime. Maxime aliquam ipsam saepe rerum dolorem iusto odio labore fugit quod aut cum ipsum quas, nobis beatae, cumque quibusdam quaerat consectetur a eum blanditiis laborum tempore fuga. Tempore impedit quibusdam eos facilis in enim sed dicta aut voluptas nisi et provident deleniti dolorem atque incidunt possimus vero, dolore illum. Fugiat aspernatur temporibus totam doloribus commodi magnam optio eum dicta natus dolor a neque tenetur, saepe sequi dolores cupiditate labore voluptatem, eaque, similique consequuntur asperiores earum hic porro. Et eos, numquam dolores ut delectus sed quibusdam repellat at quas, itaque, similique officiis? Distinctio nesciunt commodi est. Odit reprehenderit, id natus numquam earum provident ducimus libero excepturi dolor rem iste nam dolore!</div>
+        <div class="card">Cards 3</div>
+    </div>
+</body>
+</html>
