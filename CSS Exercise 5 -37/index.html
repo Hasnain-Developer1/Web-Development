@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        nav ul li {
+            list-style: none;
+            display: inline;
+            padding: 50px 50px;
+            color: white;
+        }
+
+        nav ul {
+            border: 2px solid blue;
+            background-color: rgb(240, 6, 174);
+            border-radius: 20px;
+            padding: 10px;
+            padding-top: 0px;
+            margin-top: 0px;
+
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+
+        .main {
+            border: 2px solid red;
+            height: 600px;
+            margin: 0px 50px;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .span1 {
+            border: 2px solid red;
+            background-color: orange;
+
+
+
+        }
+
+        .span2 {
+            border: 2px solid red;
+            background-color: burlywood;
+        }
+
+        .span1,
+        .span2 {
+            margin: 300px 140px;
+            padding: 100px;
+
+        }
+
+        .foot {
+            border: 2px solid black;
+            height: 80px;
+            margin: 0px 50px;
+            margin-top: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            border: 2px solid black;
+            border-radius: 20px;
+            height: 50px;
+            margin: 0px 50px;
+            margin-top: 30px;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .fixed{
+            border: 2px solid black;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            position: fixed;
+            margin-top: 320px;
+            margin-left: 1015px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+        <nav>
+            <ul>
+                <li>Home </li>
+                <li>About</li>
+                <li>Serivices</li>
+                <li>Contact Us</li>
+                <li>hasnainmalik9925@gmail.com</li>
+            </ul>
+        </nav>
+        <div class="fixed">Logo</div>
+    <div class="main">
+        <span class="span1">
+
+        </span>
+        <span class="span2">
+
+        </span>
+    </div>
+    <div class="foot">
+        <h1>Welcome to my Web Development Journey</h1>
+    </div>
+    
+    <footer class="footer">
+        <h1>This is a Footer</h1>
+    </footer>
+
+</body>
+
+</html>
