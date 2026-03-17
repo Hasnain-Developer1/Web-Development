@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FlexBox</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; ya horizonticaly center ke deta ha */
+            align-items: center; /*ya ver ticaly center kr deta ha*/
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            /* align-content: flex-start; */
+            /* there is no justify items in flex box  */
+            /* flex-flow:  row wrap-reverse; */
+            /* gap: 20px; */
+            gap: 60px 10px;
+
+        }
+        .items{
+            /* flex-grow: 1; */
+            height: 62px;
+            width: 62px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            /* margin: 4px; */
+        }
+        .order-1{
+            /* flex-grow: 3; */
+            /* order: 1; */
+            flex-shrink: 2;
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items order-1">4</div>
+            <div class="items">5</div>
+            <div class="items">6</div>
+            <div class="items">7</div>
+            <div class="items">8</div>
+            
+            
+            
+        </div>
+    </main>
+</body>
+</html>
