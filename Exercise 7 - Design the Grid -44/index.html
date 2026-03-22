@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+            background-color: rgb(253, 253, 253);
+            position: sticky;
+            top: 0px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .left,
+        .center,
+        .right {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .dwnld {
+            background-color: rgb(245, 214, 87);
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            max-width:  1200px;
+            margin: 0 auto ;
+            gap: 25px;
+        }
+
+        .boxes {
+            border-radius: 10px;
+            background-color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 100%;
+            transition: transform 0.2s ease-in-out;
+        }
+        .boxes button{
+            padding: 10px;border-radius: 10px;
+            background-color: #5cb85c;
+            cursor: pointer;
+        }
+        .boxes:hover{
+            transform: translateY(-5px);
+        }
+        .boxes button:hover{
+            background-color: #4cae4c;
+            transform: scale(1.05);
+            transition: all 0.2s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Design this website's navabar using flexBox -->
+    <div class="navbar">
+
+        <ul class="left">
+            <li>Logo</li>
+            <li>Ulrta Edit</li>
+        </ul>
+        <ul class="center">
+            <li>Products</li>
+            <li>Buy</li>
+            <li>Renew</li>
+            <li>Support</li>
+            <li>Learn</li>
+            <li>Company</li>
+        </ul>
+        <ul class="right">
+            <li><button class="dwnld">download</button></li>
+            <li>English</li>
+            <li>Search</li>
+        </ul>
+
+    </div>
+    <div class="container">
+        <span class="boxes">
+            <div class="innerdiv">
+                <h3>English</h3>
+                <button>download-32-bit</button>
+                <button>Download-64-bit</button>
+            </div>
+        </span>
+        <span class="boxes">
+            <div>
+                <h3>English</h3>
+                <button>download-32-bit</button>
+                <button>Download-64-bit</button>
+            </div>
+        </span>
+        <span class="boxes">
+            <div>
+                <h3>English</h3>
+                <button>download-32-bit</button>
+                <button>Download-64-bit</button>
+            </div>
+        </span>
+        <span class="boxes">
+            <div>
+                <h3>English</h3>
+                <button>download-32-bit</button>
+                <button>Download-64-bit</button>
+            </div>
+        </span>
+        <span class="boxes">
+            <div>
+                <h3>English</h3>
+                <button>download-32-bit</button>
+                <button>Download-64-bit</button>
+            </div>
+        </span>
+        <span class="boxes">
+            <div>
+                <h3>English</h3>
+                <button>download-32-bit</button>
+                <button>Download-64-bit</button>
+            </div>
+        </span>
+        <span class="boxes">
+            <div>
+                <h3>English</h3>
+                <button>download-32-bit</button>
+                <button>Download-64-bit</button>
+            </div>
+        </span>
+        <span class="boxes">
+            <div>
+                <h3>English</h3>
+                <button>download-32-bit</button>
+                <button>Download-64-bit</button>
+            </div>
+        </span>
+        <span class="boxes">
+            <div>
+                <h3>English</h3>
+                <button>download-32-bit</button>
+                <button>Download-64-bit</button>
+            </div>
+        </span>
+        <span class="boxes">
+            <div>
+                <h3>English</h3>
+                <button>download-32-bit</button>
+                <button>Download-64-bit</button>
+            </div>
+        </span>
+        <span class="boxes">
+            <div>
+                <h3>English</h3>
+                <button>download-32-bit</button>
+                <button>Download-64-bit</button>
+            </div>
+        </span>
+        <span class="boxes">
+            <div>
+                <h3>English</h3>
+                <button>download-32-bit</button>
+                <button>Download-64-bit</button>
+            </div>
+        </span>
+    </div>
+</body>
+
+</html>
