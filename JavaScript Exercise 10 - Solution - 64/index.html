@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercise 10 - Solution</title>
+</head>
+
+<body>
+    <script>
+        let name1, name2, name3,rand
+
+        // first Name
+        rand = Math.random();
+        if (rand < 0.33) {
+            name1 = "Crazy"
+        }
+        else if (rand < 0.66 && rand >= 0.33) {
+            name1 = "Amazing"
+
+        }
+        else {
+            name1 = "Fire"
+
+        }
+
+        // Second Name
+
+
+        rand = Math.random();
+        if (rand < 0.33) {
+            name2 = "Engine"
+        }
+        else if (rand < 0.66 && rand >= 0.33) {
+            name2 = "Food"
+
+        }
+        else {
+            name2 = "Garments"
+
+        }
+
+
+        // Third Name
+
+
+        rand = Math.random();
+        if (rand < 0.33) {
+            name3 = "Bros"
+        }
+        else if (rand < 0.66 && rand >= 0.33) {
+            name3 = "limited"
+
+        }
+        else {
+            name3 = "Hub"
+
+        }
+        console.log("Your business name is " + name1 + " " + name2 + " " + name3)
+    </script>
+</body>
+
+</html>
