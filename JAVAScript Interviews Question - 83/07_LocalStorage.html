@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+</head>
+
+<body>
+    <button>Add Note</button>
+    <div class="note"></div>
+    <script>
+        function saveNoteToLocalFunction(note) {
+            localStorage.setItem("note", note)
+        }
+        let note = localStorage.getItem("note")
+        if(note){
+            document.querySelector(".note").innerHTML = note
+        }
+        document.querySelector("button").addEventListener("click", ()=>{
+            let note = prompt("Enter your note:")
+            saveNoteToLocalFunction(note)
+            document.querySelector(".note").innerHTML = note
+        })
+
+
+    </script>
+
+    <!-- 
+
+    a = {
+    "Hasnian": 1
+    "Ayyan": 67}
+VM153:3 Uncaught SyntaxError: Unexpected stringUnderstand this error
+a = {"Hasnain": 1, "Ayyan": 60}
+{Hasnain: 1, Ayyan: 60}
+JSON.stringify(a)
+'{"Hasnain":1,"Ayyan":60}'
+localStorage.setItem("Boys", a)
+undefined
+localStorage.getItem("Boys")
+'[object Object]'
+localStorage.setItem("Boys", JSON.stringify(a))
+undefined
+localStorage.getItem("Boys")
+'{"Hasnain":1,"Ayyan":60}'
+JSON.parse(localStorage.getItem("Boys"))
+{Hasnain: 1, Ayyan: 60}
+    -->
+</body>
+
+</html>
