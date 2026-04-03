@@ -171,8 +171,8 @@ nav button {
 
 .secimg {
     position: relative;
-    /* width: 70vw;
-    max-width: 399px; */
+    width: 70vw;
+    max-width: 399px;
 }
 
 .secimg img {
