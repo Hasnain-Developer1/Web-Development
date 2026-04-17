@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/utility.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img width="30" class="invert" src="img/close.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img width="150" class="invert" src="img/logo.svg" alt=""></div>
+                <ul>
+                    <li><img class="invert" src="img/home.svg" alt="Home">
+                        <p>Home</p>
+                    </li>
+                    <li><img class="invert" src="img/search.svg" alt="Search">
+                        <p>Search</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="img/playlist.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+                <div class="songList">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign Up</button>
+                    <button class="loginbtn">Log In</button>
+                </div>
+            </div>
+            <div class="spotifyplaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+                    <div data-folder="Karan Aujla" class="card">
+                        <div  class="play">
+                            <svg width="70" height="70" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" fill="#1fdf64" />
+                                <path
+                                    d="M9.5 11.2v1.6c0 1.52 0 2.28.46 2.59.45.31 1.07-.03 2.32-.71l1.47-.8c1.5-.82 2.25-1.23 2.25-1.88s-.75-1.06-2.25-1.88l-1.47-.8c-1.25-.68-1.87-1.02-2.32-.71-.46.31-.46 1.07-.46 2.59z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://wallpaperaccess.com/full/2747340.jpg" alt="">
+                        <h2>Karan Aujla</h2>
+                        <p>Enjoy the songs of Karan Aujla</p>
+                    </div>
+                    <!-- 2nd card              -->
+                    <div data-folder="Cheema Y" class="card">
+                        <div  class="play">
+                            <svg width="70" height="70" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" fill="#1fdf64" />
+                                <path
+                                    d="M9.5 11.2v1.6c0 1.52 0 2.28.46 2.59.45.31 1.07-.03 2.32-.71l1.47-.8c1.5-.82 2.25-1.23 2.25-1.88s-.75-1.06-2.25-1.88l-1.47-.8c-1.25-.68-1.87-1.02-2.32-.71-.46.31-.46 1.07-.46 2.59z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.pinimg.com/736x/c8/5c/d4/c85cd4e526beb781c2bc3e393437f1ab.jpg" alt="">
+                        <h2>Cheema Y</h2>
+                        <p>Enjoy the Songs of Cheema Y</p>
+                    </div>
+                    <!-- 3rd Card -->
+                    <div data-folder="Sidhu Moose Wala" class="card">
+                        <div  class="play">
+                            <svg width="70" height="70" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" fill="#1fdf64" />
+                                <path
+                                    d="M9.5 11.2v1.6c0 1.52 0 2.28.46 2.59.45.31 1.07-.03 2.32-.71l1.47-.8c1.5-.82 2.25-1.23 2.25-1.88s-.75-1.06-2.25-1.88l-1.47-.8c-1.25-.68-1.87-1.02-2.32-.71-.46.31-.46 1.07-.46 2.59z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.pinimg.com/736x/42/0b/ae/420bae2235b3f6e0f4a81c1ef8c7c753.jpg" alt="">
+                        <h2>Sidhu Moose Wala</h2>
+                        <p>Enjoy the Songs of Sidhu Moose Wala</p>
+                    </div>
+                    <div data-folder="Shubh" class="card">
+                        <div  class="play">
+                            <svg width="70" height="70" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" fill="#1fdf64" />
+                                <path
+                                    d="M9.5 11.2v1.6c0 1.52 0 2.28.46 2.59.45.31 1.07-.03 2.32-.71l1.47-.8c1.5-.82 2.25-1.23 2.25-1.88s-.75-1.06-2.25-1.88l-1.47-.8c-1.25-.68-1.87-1.02-2.32-.71-.46.31-.46 1.07-.46 2.59z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.pinimg.com/736x/dc/9b/94/dc9b94dc7295385abeb927121a2f8e9f.jpg" alt="">
+                        <h2>Shubh</h2>
+                        <p>Enjoy the Songs of Shubh</p>
+                    </div>
+                    <div data-folder="Atif Aslam" class="card">
+                        <div  class="play">
+                            <svg width="70" height="70" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" fill="#1fdf64" />
+                                <path
+                                    d="M9.5 11.2v1.6c0 1.52 0 2.28.46 2.59.45.31 1.07-.03 2.32-.71l1.47-.8c1.5-.82 2.25-1.23 2.25-1.88s-.75-1.06-2.25-1.88l-1.47-.8c-1.25-.68-1.87-1.02-2.32-.71-.46.31-.46 1.07-.46 2.59z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.pinimg.com/736x/62/dd/d7/62ddd75c74057ca758b2d397c8c59a44.jpg" alt="">
+                        <h2>Atif Aslam</h2>
+                        <p>Enjoy the Songs of Atif Aslam</p>
+                    </div>
+                    <div data-folder="AP Dhillon" class="card">
+                        <div  class="play">
+                            <svg width="70" height="70" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" fill="#1fdf64" />
+                                <path
+                                    d="M9.5 11.2v1.6c0 1.52 0 2.28.46 2.59.45.31 1.07-.03 2.32-.71l1.47-.8c1.5-.82 2.25-1.23 2.25-1.88s-.75-1.06-2.25-1.88l-1.47-.8c-1.25-.68-1.87-1.02-2.32-.71-.46.31-.46 1.07-.46 2.59z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.pinimg.com/736x/6c/a5/f3/6ca5f3112499fb3698b7bdeb3137153c.jpg" alt="">
+                        <h2>AP Dhillon</h2>
+                        <p>Enjoy the Songs of AP Dhillon</p>
+                    </div>
+
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="abovebar">
+
+                        <div class="songinfo">
+                            <div class="songtext"></div>
+                        </div>
+                        <div class="songbuttons">
+                            <img width="35" id="previous" src="img/prevsong.svg" alt="">
+                            <img width="35" id="play" src="img/play.svg" alt="">
+                            <img width="35" id="next" src="img/nextsong.svg" alt="">
+                        </div>
+                        <div class="timevol">
+                            <div class="songtime">
+
+                            </div>
+                            <div class="volume">
+                                <img width="25" src="img/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
