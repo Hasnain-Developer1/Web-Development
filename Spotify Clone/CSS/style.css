@@ -439,7 +439,7 @@ body {
     }
 
     .playbar {
-        right: 25px;
+        right: 45px;
     }
 }
 
@@ -471,6 +471,9 @@ body {
     }
     .left{
         position: fixed;
+    }
+    .playbar{
+        right: 10px;
     }
 
 }
