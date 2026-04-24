@@ -73,7 +73,7 @@ db.createCollection("courses")
 //     }
 //   ]
 //   )
-  
+
 // READ
 //   let a = db.courses.find({"price": 0})
 
@@ -83,17 +83,16 @@ db.createCollection("courses")
 
 //   console.log(b);
 
-  // UPDATE
+// UPDATE
 //   db.courses.updateOne({price: 0}, {$set: {price: 100}})
 
 //   db.courses.updateMany({price: 100}, {$set: {price: 1000}})
 
-  //DELETE
+//DELETE
 
 //   db.courses.deleteOne({price: 1000})
-  db.courses.deleteMany({price: 0})
-  db.courses.deleteMany({age: 19})
+db.courses.deleteMany({ price: 0 })
+db.courses.deleteMany({ age: 19 })
 
-  // https://www.mongodb.com/docs/manual/reference/operator/query/
+// https://www.mongodb.com/docs/manual/reference/operator/query/
 
-  
