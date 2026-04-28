@@ -1,0 +1,21 @@
+{
+  "name": "x.com-(twitter)-clone-using-tailwind-css---101",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx @tailwindcss/cli -i ./CSS/input.css -o ./CSS/output.css --watch",
+    "vite": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "tailwindcss": "^4.2.4",
+    "vite": "^8.0.10"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.4"
+  }
+}
