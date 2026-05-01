@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "npx @tailwindcss/cli -i ./CSS/input.css -o ./CSS/output.css --watch",
-    "vite": "vite"
+    "dev": "vite"
   },
   "keywords": [],
   "author": "",
