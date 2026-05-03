@@ -1,0 +1,17 @@
+{
+  "name": "what-is-hosting-where-to-host-which-hosting",
+  "version": "1.0.0",
+  "description": "1. Shared Hosting\r 2. Dedicated Hosting\r 3. Managed Hosting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
