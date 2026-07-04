@@ -11,6 +11,8 @@ export const metadata = {
   description: "This website is a crowdfunding platform for creators.",
 };
 
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
